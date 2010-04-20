@@ -1,7 +1,24 @@
 PhoneGap-Windows
 =============================================================
 PhoneGap-Windows is just like PhoneGap on mobile phones 
-except that it is for the desktop. Makes sense right?
+except that it is for the desktop. Makes sense right? There 
+are definitely some other similar solutions out there but I
+figured we might as well try it out with the PhoneGap 
+JavaScript APIs.
+
+
+Getting started
+-------------------------------------------------------------
+This uses an awesome open source implementation of WebKit on 
+Windows called WebKit.NET that can be downloaded from here:
+http://sourceforge.net/projects/webkitdotnet
+
+You will want to get the version 0.3 source and fix the link 
+in the provided Visual Studio .NET 2008 solution file to get 
+it working.
+
+Once you get past that it is pretty sweet, you can start 
+building native Windows apps with Canvas!
 
 
 Community
