@@ -1,0 +1,23 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<script src="script/core.js"></script>
+		<script src="script/geolocation.js"></script>
+		<script src="script/position.js"></script>
+		<script>
+		function getLocation() {
+    		navigator.geolocation.getCurrentPosition(gotLocation, errLocation, {});
+    	}
+    	function gotLocation(position) {
+    	    document.getElementById('lat-lng').innerHTML = position.coords.latitude + ', ' + position.coords.longitude;
+    	}
+    	function errLocation() {
+    	}
+		</script>
+	</head>
+	<body>
+	    <button onclick="getLocation()">get location</button>
+	    <div id="lat-lng">...</div>
+	</body>
+</html>
